@@ -14,7 +14,6 @@ The regex we'll be looking at will be used to find emails matching
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
 - [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
@@ -38,11 +37,11 @@ The plus sign means that to be truthy, the string must match at least one or mor
 
 The second quantifier is the min/max expression {N, M}, where N is the minimum times (characters) the string must match and M is the maximum times it can match. We want to make sure that all valid domain names can be used. See above example in the [Anchors](#anchors) section for examples of short and long domain names.
 
-### OR Operator
-
-/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z]{2,6})$/
-
 ### Character Classes
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z]{2,6})$/
+The character classes present in the regex are mostly ranges, but does include a simple class.
+
+A pattern collection is a syntactic structure that describes a character class. A character class is a set of metacharacters and regular characters that combine to create a matching pattern that, like a metacharacter, can match many different characters in text.
 
 ### Flags
 
