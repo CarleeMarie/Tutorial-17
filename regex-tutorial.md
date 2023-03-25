@@ -17,10 +17,8 @@ The regex we'll be looking at will be used to find emails matching
 - [Character Classes](#character-classes)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+- [About the Author](#author)
 
 ## Regex Components
 
@@ -53,17 +51,10 @@ The second bracketed expression comes after @: [\da-z\.-]. This tells the regex 
 
 The last bracketed expression is used to search for the domain extension: [a-z]. Because domain extensions do not contain any numbers, the expression is only searching for letters a through z.
 
-### Greedy and Lazy Match
-/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z]{2,6})$/
-
 ### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
-
-/\w+$/ to search for ".com" or ".edu" at the end of an email address
+The carrot (^) character denotes the beginning of the expression (aka a boundary). The dollar sign ($) marks the end of the expression. There are other characters that can be used as other kinds of boundaries, but in this expression, we only use the ^ and $.
 
 ## Author
+Carlee Miller is working her way through a full-stack coding boot camp and is hoping some of this actually sticks. 
+[GitHub Profile](https://github.com/CarleeMarie) 
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
